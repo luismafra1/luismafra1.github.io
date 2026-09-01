@@ -1,8 +1,27 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
+    <!-- Description para SEO -->
+    <meta
+      name="description"
+      content="Portfólio de Luís Felipe Mafra, desenvolvedor Full-Stack em formação, com experiência em HTML, CSS, JavaScript e React."
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Open Graph tags -->
+    <meta
+      property="og:title"
+      content="Luís Felipe Mafra — Desenvolvedor Full-Stack"
+    />
+    <meta
+      property="og:description"
+      content="Portfólio e projetos de Luís Felipe Mafra."
+    />
+    <meta
+      property="og:image"
+      content="https://luismafra1.github.io/img/profile1.jpeg"
+    />
+    <meta property="og:url" content="https://luismafra1.github.io/" />
     <title>Portfólio Luís Felipe Mafra</title>
     <!-- CSS do Projeto -->
     <link rel="stylesheet" href="css/styles.css" />
@@ -17,8 +36,10 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@2.16.0/devicon.min.css"
     />
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="./img/favicon.svg" />
   </head>
   <body>
     <main id="container">
@@ -32,7 +53,11 @@
         <p id="welcome-text">Seja bem-vindo!</p>
         <ul id="social-container">
           <li>
-            <a href="https://github.com/" target="_blank"
+            <a
+              href="https://github.com/luismafra1"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Meu perfil no GitHub"
               ><ion-icon name="logo-github"></ion-icon
             ></a>
           </li>
@@ -40,11 +65,17 @@
             <a
               href="https://www.linkedin.com/in/lu%C3%ADs-felipe-mafra-5bb513121/"
               target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Meu perfil no LinkedIn"
               ><ion-icon name="logo-linkedin"></ion-icon
             ></a>
           </li>
           <li>
-            <a href="#" target="_blank"
+            <a
+              href="https://wa.me/5547988090796?text=Ol%C3%A1%2C%20vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Meu contato WhatsApp"
               ><ion-icon name="logo-whatsapp"></ion-icon
             ></a>
           </li>
@@ -56,33 +87,51 @@
       </aside>
       <section id="about-container">
         <h1 id="name">Luís Felipe Mafra</h1>
-        <p id="title"><span class="highlight">Engenheiro Mecânico</span></p>
-        <p class="description">
-          Sou um desenvolvedor especializado em e-commerces, gosto de participar
-          do projeto desde a
-          <span class="highlight"
-            >definicao das regras de negócio e levantamento de requisitos</span
-          >
-          até o <span class="highlight">deploy da aplicacão</span>.
+        <p id="title">
+          <span class="highlight">Desenvolvedor Full-Stack em formação</span>
         </p>
         <p class="description">
-          Atuo tanto no <span class="highlight">front</span> como no
-          <span class="highlight">back-end</span>, e amo tecnologia. Estudo
-          todos os dias para me tornar cada vez melhor e escrever código de
-          qualidade.
+          Sou engenheiro mecânico em
+          <span class="highlight">transição de carreira</span> para o
+          desenvolvimento de software. A troca começou pela afinidade que tenho
+          com <span class="highlight">lógica de programação</span> e foi
+          reforçada pelas boas oportunidades da área — hoje estudo todos os
+          dias, sempre em busca do próximo problema para resolver.
         </p>
         <p class="description">
-          Fazer botao do whats funcionar, Atualizar descricao, atualizar lista
-          de skills, corrigir a palavra "Conheca", Fazer o botao "Ver Projetos"
-          levar direto para os repos do GitHub, Atualizar foto, Mudar paleta de
-          cores, mas mantendo o estilo.
+          Tenho base em <span class="highlight">HTML</span>,
+          <span class="highlight">CSS</span> e
+          <span class="highlight">JavaScript</span>, com
+          <span class="highlight">React</span> em nível básico, e já trabalhei
+          com fundamentos de ciência da computação, algoritmos de busca e
+          ordenação, notação Big O, banco de dados
+          <span class="highlight">SQL</span> e criação de rotas através do curso
+          CS50. Uso <span class="highlight">Git</span> e
+          <span class="highlight">GitHub</span> no meu fluxo de trabalho diário.
         </p>
-        <a href="#" id="btn-projects"
+        <a
+          href="https://github.com/luismafra1?tab=repositories"
+          id="btn-projects"
+          target="_blank"
+          rel="noopener noreferrer"
           ><ion-icon name="share-social-outline"></ion-icon
           ><span>Ver Projetos</span></a
         >
+        <!-- Ativar quando o CV estiver atualizado: trocar href e remover o comentário -->
+        <!--
+          <a
+          href="./cv/curriculo-luis-felipe-mafra.pdf"
+          id="btn-cv"
+          target="_blank"
+          rel="noopener noreferrer"
+          download
+          ><ion-icon name="document-text-outline"></ion-icon
+          ><span>Baixar CV</span></a
+          >
+
+          -->
         <h2 id="skills-section-title">Minhas Skills</h2>
-        <p class="description">Conheca as tecnologias que domino:</p>
+        <p class="description">Conheça as tecnologias que domino:</p>
         <div id="skills-container">
           <div class="skills-box">
             <p class="skills-title">Front-end</p>
@@ -90,31 +139,37 @@
             <i class="devicon-css3-plain colored"></i>
             <i class="devicon-javascript-plain colored"></i>
           </div>
-          <div class="skills-box">
+          <!--Backend skills inativadas-->
+          <!--<div class="skills-box">
             <p class="skills-title">Back-end</p>
             <i class="devicon-php-plain colored"></i>
             <i class="devicon-nodejs-plain colored"></i>
             <i class="devicon-python-plain colored"></i>
-          </div>
-          <div class="skills-box">
+          </div>-->
+          <!--Database skills inativadas-->
+          <!--<div class="skills-box">
             <p class="skills-title">Databases</p>
             <i class="devicon-mysql-plain colored"></i>
             <i class="devicon-mongodb-plain colored"></i>
-          </div>
+          </div>-->
+          <!--Vue.js inativado-->
           <div class="skills-box">
             <p class="skills-title">Front-end Frameworks</p>
             <i class="devicon-react-plain colored"></i>
-            <i class="devicon-vuejs-plain colored"></i>
+            <!--<i class="devicon-vuejs-plain colored"></i>-->
           </div>
-          <div class="skills-box">
+          <!--Backend Frameworks inativados-->
+          <!--<div class="skills-box">
             <p class="skills-title">Back-end Frameworks</p>
             <i class="devicon-laravel-plain colored"></i>
             <i class="devicon-django-plain colored"></i>
-          </div>
+          </div>-->
           <div class="skills-box">
             <p class="skills-title">Tools</p>
-            <i class="devicon-linux-plain colored"></i>
-            <i class="devicon-docker-plain colored"></i>
+            <!--<i class="devicon-linux-plain colored"></i>
+            <i class="devicon-docker-plain colored"></i>-->
+            <i class="devicon-git-plain colored"></i>
+            <i class="devicon-github-plain"></i>
           </div>
         </div>
       </section>
